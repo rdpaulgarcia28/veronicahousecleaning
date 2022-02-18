@@ -1,0 +1,99 @@
+
+/****** MENU *******/
+.bar{
+    background-color: palevioletred;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.bar-logo{
+    width: 60px;
+    height: 60px;
+    margin: 10px 30px;
+}
+.bar-menu{
+    margin: auto 30px;
+}
+.bar-menu a{
+    margin: 0 30px;
+    text-decoration: none;
+    color: white;
+}
+.bar-menu a:hover{
+    border-bottom: solid  white 2px;
+}
+
+/********** Cover Page *********/
+.cover-page{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url(../img/herder.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.cover-page-conteiner{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cover-page-conteiner-one{
+    width: 50%;
+    height: 80%;
+    background-color: rgba(216, 112, 147, 0.816);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.cover-page-conteiner-one h1{
+    text-align: center;
+    color: white;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.cover-page-conteiner-one p{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cover-page-conteiner-one a{
+    text-decoration: none;
+    color: palevioletred;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+.cover-page-conteiner-one a:hover{
+    color: white;
+    background-color: #d87093;
+}
+.cover-page-conteiner-two{
+    width: 50%;
+}
+@media(max-width:450px){
+    .cover-page-conteiner-two{
+        display: none;
+    }
+    .cover-page-conteiner-one{
+        width: 100%;
+    }
+}
+@media(min-width:1440px){
+    .bar{
+        width: 1440px;
+    }
+}
+
