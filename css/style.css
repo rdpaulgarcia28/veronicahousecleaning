@@ -1,8 +1,28 @@
+
+@font-face {
+    font-family: "PlayfairDisplaySC-Black";
+    src: url(../assets/font/PlayfairDisplaySC-Black.ttf);
+    font-family: "Oswald-ExtraLight";
+    src: url(../assets/font/Oswald-ExtraLight.ttf);
+    font-family: "Oswald-Bold";
+    src: url(../assets/font/Oswald-Bold.ttf);
+}
+:root{
+    --hero__titules__Font:"PlayfairDisplaySC-Black";
+    --hero__titules__colorFont:white;
+    --hero__text__Font: "Oswald-ExtraLight";
+    --hero__text__colorFont: rgba(255, 255, 255, 0.7);
+    --hero__text__colorFont--black: rgb(86, 86, 86);
+    --hero__button__Font:"Oswald-Bold";
+    --hero__button__colorFont: black;
+    --hero__button__backgroundColor: white;
+    --backgroundColor: rgb(206, 25, 161);
+}
 .hero{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: rgb(206, 25, 161);
+    background-color:var(--backgroundColor);
 }
 .hero__box{
     width: 400px;
@@ -13,12 +33,29 @@
 }
 .hero__titule{
     width: 100%;
-    color: white;
+    color: var(--hero__titules__colorFont);
     font-size: 4rem;
+    font-family: var(--hero__titules__Font);
+    line-height: 1;
+    text-transform: capitalize;
 }
 .hero__text{
     width: 100%;
-    color: white;
+    color: var(--hero__text__colorFont);
+    font-family: var(--hero__text__Font);
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.hero__button{
+    background-color: var(--hero__button__backgroundColor);
+    color: var(--hero__button__colorFont);
+    padding: 8px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    width: 220px;
+    text-align: center;
+    margin: 0 auto;
 }
 .img__box{
     width: 50%;
