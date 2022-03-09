@@ -14,21 +14,41 @@
     --hero__text__colorFont: rgba(255, 255, 255, 0.7);
     --hero__text__colorFont--black: rgb(86, 86, 86);
     --hero__button__Font:"Oswald-Bold";
-    --hero__button__colorFont: black;
-    --hero__button__backgroundColor: white;
+    --hero__button__colorFont: white;
+    --hero__button__backgroundColor:rgb(206, 25, 161) ;
     --backgroundColor: rgb(206, 25, 161);
 }
 .hero{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color:var(--backgroundColor);
 }
 .hero__box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.hero__boxLeft{
+    width: 30%;
+    height: 100%;
+}
+.hero__boxLeft img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hero__boxRight{
+    width: 70%;
+    height: 100%;
+    background-color: var(--backgroundColor);
+    position: relative;
+}
+.hero__describe{
     width: 400px;
     position: absolute;
     top: 50%;
-    right: 2%;
+    right: 4%;
     transform: translate(0%,-50%);
 }
 .hero__titule{
@@ -49,15 +69,23 @@
 .hero__button{
     background-color: var(--hero__button__backgroundColor);
     color: var(--hero__button__colorFont);
+    font-family: var(--hero__button__Font);
     padding: 8px 5px;
     border-radius: 5px;
     text-decoration: none;
     display: block;
-    width: 220px;
+    width: 150px;
     text-align: center;
-    margin: 0 auto;
+    border: 1px white solid;
 }
-.img__box{
+.hero__button:hover{
+    background-color: white;
+    color: var(--hero__button__backgroundColor);
+}
+.hero__button:active{
+    transform: scale(.9);
+}
+.img__center{
     width: 50%;
     height: 500px;
     overflow: hidden;
@@ -66,24 +94,21 @@
     left: 15%;
     transform: translate(0%,-50%);
     z-index: 1;
-    border: white solid 2px;
+    border: white solid 1px;
 }
-.img__box img{
+.img__center img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.img__box2{
-    width: 400px;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
+@media(max-width:1250px){
+    .img__center{
+        width: 40%;
+    }
 }
-.img__box2 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right;
+@media(max-width:1000px){
+    .img__center{
+        display: none;
+    }
+    .hero__describe{}
 }

@@ -138,10 +138,10 @@ span{
 /*=============================== EXTRA ==================================*/
 
 /*PARA CENTAR CON POSITION ADSOLUTA O RELATIVA*/
-/*  <<<<< SE TIENE QUE PONER 50% EN LA POSICION QUE SE VA HA CENTRAR Y 0 EN LA QUE NO >>>>
+/*  <<<<< SE TIENE QUE PONER -50% EN LA POSICION QUE SE VA HA CENTRAR Y 0 EN LA QUE NO >>>>
 top: 50%; 
 left: 50%;
-transform: translate(50%,-50%); X, Y*/
+transform: translate(-50%,-50%); X, Y*/
 
 /*  PARA HACER EL EFECTO DE TRANSICION*/   
 /*  opacity: 1;                 <<<<< la opacidad esta en 0 para el elemento que se movera
