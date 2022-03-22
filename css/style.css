@@ -15,7 +15,7 @@
     --hero__text__colorFont--black: rgb(86, 86, 86);
     --hero__button__Font:"Oswald-Bold";
     --hero__button__colorFont: white;
-    --hero__button__backgroundColor:rgb(206, 25, 161) ;
+    --hero__button__backgroundColor: rgb(98, 0, 155) ;
     --backgroundColor: rgb(206, 25, 161);
 }
 .hero{
@@ -76,7 +76,6 @@
     display: block;
     width: 150px;
     text-align: center;
-    border: 1px white solid;
 }
 .hero__button:hover{
     background-color: white;
@@ -101,6 +100,127 @@
     height: 100%;
     object-fit: cover;
 }
+/********************************************************/
+.boxCards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+.boxCards__card{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.card__imgBox{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.card__imgBox img{
+    width: 100%;
+    height: 100%;
+
+}
+.card__titule{
+    font-family: var(--hero__titules__Font);
+    margin-bottom: 5px;
+
+}
+.card__text{
+    font-family: var(--hero__text__Font);
+    color: var(--hero__text__colorFont--black);
+    text-align: center;
+}
+/************************************************/
+.services{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundColor);
+}
+.services__titule{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    font-family: var(--hero__titules__Font);
+    font-size: 2rem;
+}
+.cardPrice__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cardPrice{
+    width: 480px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    border: solid white 1px;
+    padding: 20px;
+}
+.cardPrice__boxImg{
+    width: 100%;
+    height: 60%;
+}
+.cardPrice__boxImg--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardPrice__description{
+    height: 40%;
+    position: relative;
+    width: 400px;
+}
+.cardPrice__titule{
+    text-align: center;
+}
+.cardPrice__price{
+    color: white;
+    font-size: 7rem;
+    margin-left: -20px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0%,-50%);
+}
+.cents{
+    font-size: 18px;
+    position: absolute;
+    top: 16%;
+}
+.cardPrice__listBox{
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translate(0%,-50%);
+}
+.cardPrice__list{}
+.cardPrice__list--item{}
+.extra-services{}
+.extra-services p{
+    color: white;
+    font-size: 12px;
+    width: 320px;
+    margin-left: 30px;
+}
+
 @media(max-width:1250px){
     .img__center{
         width: 40%;
@@ -110,5 +230,28 @@
     .img__center{
         display: none;
     }
-    .hero__describe{}
+    .hero__describe{
+        width: 330px;
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
 }
+@media(max-width:768px){
+    .boxCards__card{
+        width: 330px;
+        height: 400px;
+    }
+    .cardPrice__price{
+        font-size: 5rem;
+        margin-left: 30px;
+    }
+}
+@media(max-width: 425px){
+    .hero__boxLeft{
+        display: none;
+    }
+    .hero__boxRight{
+        width: 100%;
+    }
+}
+

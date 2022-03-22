@@ -7,6 +7,8 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    z-index: 1;
+
 }
 .bar-logo{
     width: 70px;
@@ -26,7 +28,7 @@
 .conteiner-menu-items a{
     color: white;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 30px;
 }
 .conteiner-menu-items a:hover{
     border-bottom: white solid 1px;
@@ -35,8 +37,8 @@
 /*===================== VARIABLES ======================*/
 :root{
     --color-BURBUJA:white; /*COLOR DE LA BURBUJA*/
-    --color-LINEAS: palevioletred; /*COLOR DE LAS LINEAS*/
-    --color-PANEL: rgba(216, 112, 147, 0.9); /*COLOR DEL PANEL*/
+    --color-LINEAS: rgb(206, 25, 161); /*COLOR DE LAS LINEAS*/
+    --color-PANEL: rgb(206, 25, 161); /*COLOR DEL PANEL*/
     --color-LETRAS: white; /*COLOR DE LAS LETRAS DEL PANEL*/
     --color-LETRAS_HOVER: palevioletred; /*COLOR DE LAS LETRAS AL PASAR SOBRE ELLAS*/
     --color-LETRAS_HOVER_BACKGROUND: white; /*COLOR DEL BACKGROUND DE LAS LETRAS AL PASAR SOBRE ELLAS*/
@@ -100,6 +102,7 @@
       left: 0;
       transition: transform 0.3s ease;
       transform: translate(0,-150%);
+      z-index: 1;
   }
   .is-active{
       transform: translate(0,0);
